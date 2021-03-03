@@ -1,0 +1,101 @@
+
+Session :7 Profiles in Spring Boot || How to use profiles in spring boot
+
+1. What is a profile in spring boot?
+2. Why do we need profiles?
+3. How to use profiles in spring boot?
+
+
+1. What is a profile in spring boot?
+---------------------------------------------------------------------------------
+profile
+->provides a way to segregate/separate parts of your  application configuration.
+
+https://stackabuse.com/monitoring-with-spring-boot-actuator/
+
+https://springframework.guru/spring-profiles/
+
+->make it available in certain environment.
+
+->Any @Component or @Configuration can be marked with @profile to limit when it is loaded.
+
+
+Q)How to set spring.profile.active in command prompt
+step:1
+mvn clean install
+step:2
+take the jar file
+step:3
+ SpringProfiles-0.0.1-SNAPSHOT.jar --spring.profile.active=prod [enter]
+step4:
+ouput
+
+
+----------------------------------------------------------------------------
+
+Session 6:   Properties in SpringBoot || @Value & @ConfigurationProperties
+
+
+Autodetection of application.properties inside src/main/resources and src/test/resources
+
+Q)How to read that values ?
+->By using @value Annotation and
+->@ConfigurableProperties(prefix ="prefix"); at class level
+->property file at separate location using spring.config.location=classpath:/proper2. properites
+->properties form command line
+->environment variables
+->Random property value
+->@TestPropertyResource
+
+
+
+----------------------------------------------------------------------------
+Session 5: Swagger Documentation + Spring Boot || REST API Documentation
+
+
+the documentation of RESTfull application using swagger - 
+1. What is Swagger?
+2. How to add into spring boot project.
+3. How to test the API using swagger?
+http://localhost:8081/v2/api-docs( for json format)
+http://localhost:8082/swagger-ui.html (for html format)
+5. How to customize the swagger UI.
+Using Docket instance
+
+1. What is Swagger?
+--------------------------------------------------------
+1)Swagger takes the manual work out of API Documentation , with a range of solutions for generating visualization and maintaining  API DOCS.
+2)Easily integrate with spring boot.
+
+
+2. How to add swagger into spring boot project.
+-----------------------------------------------------------------------
+The swagger2 specification , which is known as OpenAPI  Specification.
+
+this as several implementation , we will use SpringFox Implementation.
+
+1)Springfox Swagger2 » 3.0.0
+JSON API documentation for spring based applications 
+https://mvnrepository.com/artifact/io.springfox/springfox-swagger2/3.0.0
+ 
+2)Springfox Swagger UI
+JSON API documentation for spring based applications 
+https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
+
+
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
